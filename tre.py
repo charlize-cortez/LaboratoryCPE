@@ -39,3 +39,16 @@ print("\nPre-order Traversal")
 preorder_traversal(root)
 print("\nPost order Traversal")
 postorder_traversal(root)
+
+def swap_values(node1, node2):
+    node1.value, node2.value = node2.value, node1.value
+
+swap_values(root, root.left)
+
+print("In-order Traversal after swapping root and left child:")
+inorder_traversal(root)
+print("\nPre-order Traversal after swapping root and left child:")
+preorder_traversal(root)
+print("\nPost-order Traversal after swapping root and left child:")
+postorder_traversal(root)
+
